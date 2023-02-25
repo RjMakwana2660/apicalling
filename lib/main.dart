@@ -1,24 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:test_project/dashboard.dart';
+import 'package:test_project/data_controller.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(  MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+    MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
 
     return GetMaterialApp(
+
       title: 'Flutter Demo App',
       theme: ThemeData(
         primarySwatch: Colors.lightGreen
       ),
       home: DashBoard(),
+      // home: TempWork(),
     );
 
     // return MaterialApp(
@@ -127,3 +130,4 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 */
+
